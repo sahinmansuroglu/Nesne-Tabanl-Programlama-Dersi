@@ -1,0 +1,13 @@
+class Program
+    {
+        //1-20 Arasındaki Tek Sayilari Ekrana Yazdırınız
+        static void Main(string[] args)
+        {
+            Console.WriteLine("1 ile 20 Arasındaki Tek Sayilar");
+            for (int i =1 ; i<=20; i+=2)
+            {
+                Console.WriteLine($"{i}");
+            }
+            Console.ReadKey();
+        }
+    }

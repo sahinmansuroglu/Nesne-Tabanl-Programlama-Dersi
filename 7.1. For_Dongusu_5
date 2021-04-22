@@ -1,0 +1,24 @@
+ 
+class Program
+    {
+        //Kullanıcıdan kaç sayı girmek istediği bilgisi istenilecek
+        //Ardın istenilen adette "sayı" girdirilecek
+        //Bu sayıların Toplamı hesaplatılacak
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Kaç Sayı Girmek İstiyorsunuz:");
+            int adet = Convert.ToInt32(Console.ReadLine());
+            int toplam = 0;
+            
+            for (int i =0 ; i<adet; i++)
+            {
+                Console.WriteLine($"{i + 1}. Sayıyı Giriniz:");
+                int girilenSayi = Convert.ToInt32(Console.ReadLine());
+                toplam = toplam + girilenSayi;
+
+            }
+            Console.WriteLine($"Toplam={toplam}");
+            Console.ReadKey();
+        }
+    }
